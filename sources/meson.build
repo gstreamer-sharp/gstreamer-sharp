@@ -35,7 +35,7 @@ sources = [
 subdir('generated')
 
 gst_sharp = shared_library('gstreamer-sharp', gst_generate_files, sources,
-        cs_args: ['-nowarn:169', '-nowarn:108', '-nowarn:114', '-unsafe'],
+        cs_args: ['-nowarn:169', '-nowarn:108', '-nowarn:114', '-unsafe', '-nostdlib', '-noconfig', '-r:/usr/lib/mono/xbuild-frameworks/.NETStandard/netstandard2.0/netstandard.dll'],
         dependencies: [glib_sharp_dep, gio_sharp_dep])
 
 gst_sharp_dep = declare_dependency(dependencies: [glib_sharp_dep, gio_sharp_dep],
