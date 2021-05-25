@@ -1,4 +1,4 @@
-project('gstreamer-sharp', ['cs', 'c'], version: '1.19.0.1',
+project('gstreamer-sharp', ['cs', 'c'], version: '1.18.2',
     meson_version : '>= 0.54', license: 'LGPL')
 
 if host_machine.system() == 'osx'
@@ -12,10 +12,10 @@ endif
 gtk_sharp_required_version = '>=3.22.6'
 
 csc = meson.get_compiler('cs')
-if csc.get_id() == 'mono'
-    add_project_arguments('-keyfile:' + join_paths(meson.current_source_dir(), meson.project_name() + '.snk'),
-        language: ['cs'])
-endif
+#if csc.get_id() == 'mono'
+#    add_project_arguments('-keyfile:' + join_paths(meson.current_source_dir(), meson.project_name() + '.snk'),
+#        language: ['cs'])
+#endif
 
 
 subproject('gtk-sharp', default_options: ['install=false'])

@@ -1,7 +1,6 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gstreamer-sharp", "gstreamer-sharp.csproj", "{64358320-CAC2-4B22-836C-268269DAB031}"
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gstreamer-sharp", "sources/gstreamer-sharp.csproj", "{64358320-CAC2-4B22-836C-268269DAB031}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
